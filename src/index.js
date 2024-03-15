@@ -1,13 +1,12 @@
-
+const pessoaRouter = require ('./routes/pessoa');
 const db = require('./infrastructure/db');
+const express = require('express');
 
-
-const express = require('express')
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('/pessoa',pessoaRouter)
 })
 
 app.listen(port, () => {
