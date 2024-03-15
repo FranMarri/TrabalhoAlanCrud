@@ -27,6 +27,7 @@ router.get('/', async (req, res) => {
 
 // criar
 router.post('/', async (req, res) => {
+    console.log(req.body)
     try {
         const pessoa = await Pessoa.create(req.body);
         res.status(201).json(pessoa);
