@@ -1,4 +1,4 @@
-const pessoaRouter = require ('./routes/pessoa');
+const pessoaRouter = require ('./routes/pessoaRoutes');
 const db = require('./infrastructure/db');
 const express = require('express');
 
